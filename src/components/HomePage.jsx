@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Selection from "./Selection";
+import SelectedSidebar from "./SelectedSidebar";
 import ExpertGrid from "./ExpertGrid";
 
 export default function HomePage() {
@@ -16,7 +16,7 @@ export default function HomePage() {
             <ExpertGrid setSelectedTeam={setSelectedTeam} selectedTeam={selectedTeam}/>
           </div>
           <div className="w-1/4 ">
-            <Selection selectedTeam={selectedTeam} setSelectedTeam={setSelectedTeam}/>
+            <SelectedSidebar selectedTeam={selectedTeam} setSelectedTeam={setSelectedTeam}/>
           </div>
         </div>
       </div> 
