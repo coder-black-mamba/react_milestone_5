@@ -8,11 +8,11 @@ export default function SelectedSidebar({selectedTeam, setSelectedTeam}) {
     {selectedTeam.length > 0 && (
       <div className='p-3 border-b border-slate-300  my-3'>
       <h2 className='text-2xl font-bold '>Expert Added : {selectedTeam.length}</h2>
-      <h2 className='text-2xl font-bold'>Total Cost : {selectedTeam.reduce((total, expert) => total + expert.salary, 0)}</h2>
+      <h2 className='text-2xl font-bold'>Total Cost :$ {selectedTeam.reduce((total, expert) => total + expert.salary, 0)}</h2>
       </div>
     )}
 
-
+{/* done */}
 
 
       {selectedTeam.length > 0 ? selectedTeam.map((expert) => (
