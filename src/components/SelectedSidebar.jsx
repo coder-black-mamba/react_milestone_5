@@ -16,7 +16,7 @@ export default function SelectedSidebar({selectedTeam, setSelectedTeam}) {
 
 
       {selectedTeam.length > 0 ? selectedTeam.map((expert) => (
-        <div key={Math.random()} className='mt-5'>
+        <div key={Math.random()} className='mt-3'>
           <SingleSelectedCard name={expert.name} img={expert.img}/>
         </div>
       )) : <p className='text-center text-red-500 font-bold'>No team selected</p>}
